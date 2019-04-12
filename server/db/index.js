@@ -1,6 +1,7 @@
-const db = require('./db')
+const models = require('./models')
 
-// register models
-require('./models')
+const { ImageObject } = models
 
-module.exports = db
+module.exports = {
+  ImageObject
+}
